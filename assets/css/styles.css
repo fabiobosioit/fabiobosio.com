@@ -1,0 +1,122 @@
+/* ── Splash Screen ── */
+#splash {
+    position: fixed;
+    inset: 0;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+#splash img {
+    width: 0;
+    animation: logoGrow 3s ease forwards;
+}
+
+@keyframes logoGrow {
+    from { width: 0; }
+    to   { width: 75vmin; }
+}
+
+/* ── Page content (hidden until splash ends) ── */
+#page {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.6s ease;
+}
+
+#page.visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* ── Base layout ── */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    color: #222;
+    font-size: 16px;
+}
+
+header {
+    text-align: center;
+    padding: 2rem 1rem 1rem;
+}
+
+header .logo {
+    width: 120px;
+    max-width: 40vw;
+    margin-bottom: 1rem;
+}
+
+header h1 {
+    font-size: clamp(1.4rem, 5vw, 2.2rem);
+}
+
+header p {
+    font-size: clamp(0.9rem, 3vw, 1.1rem);
+    padding: 0 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem 2rem;
+    padding: 1rem;
+    background: #f5f5f5;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: clamp(0.85rem, 3vw, 1rem);
+}
+
+nav a:hover {
+    color: #0070f3;
+}
+
+main {
+    max-width: 800px;
+    width: 100%;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem 1rem;
+    font-size: 0.85rem;
+    color: #888;
+    border-top: 1px solid #eee;
+    margin-top: 3rem;
+}
+
+/* ── Mobile ── */
+@media (max-width: 480px) {
+    header {
+        padding: 1.5rem 1rem 0.75rem;
+    }
+
+    header .logo {
+        width: 80px;
+    }
+
+    nav ul {
+        gap: 0.75rem 1.5rem;
+        padding: 0.75rem;
+    }
+
+    main {
+        margin: 1.5rem auto;
+    }
+}
