@@ -19,18 +19,6 @@
     to   { width: 75vmin; }
 }
 
-/* ── Page content (hidden until splash ends) ── */
-#page {
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 0.6s ease;
-}
-
-#page.visible {
-    visibility: visible;
-    opacity: 1;
-}
-
 /* ── Base layout ── */
 * {
     box-sizing: border-box;

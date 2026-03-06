@@ -6,7 +6,7 @@ document.getElementById('layout').innerHTML = `
     </header>
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="home.html">Home</a></li>
             <li><a href="about.html">About Me</a></li>
             <li><a href="services.html">Services</a></li>
             <li><a href="contact.html">Contact</a></li>
