@@ -143,28 +143,28 @@ main {
     line-height: 1.5;
 }
 
-main > h2 {
+.services-list-title {
     margin-bottom: 1rem;
 }
 
-main ul {
+.services-list {
     list-style: none;
     display: grid;
     gap: 1rem;
 }
 
-main ul li {
+.services-list li {
     padding: 1rem 1.1rem;
     border: 1px solid #eee;
     border-radius: 14px;
     background: #fff;
 }
 
-main ul li h3 {
+.services-list li h3 {
     margin-bottom: 0.35rem;
 }
 
-main ul li p {
+.services-list li p {
     color: #4a5568;
     line-height: 1.55;
 }
