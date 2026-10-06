@@ -1,0 +1,38 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="ai-bg" x1="160" y1="80" x2="1040" y2="720" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EAF4FF"/>
+      <stop offset="1" stop-color="#F7FAFF"/>
+    </linearGradient>
+    <linearGradient id="ai-panel" x1="260" y1="180" x2="940" y2="620" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#E8F1FF"/>
+    </linearGradient>
+    <linearGradient id="ai-accent" x1="340" y1="180" x2="860" y2="620" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2F80ED"/>
+      <stop offset="1" stop-color="#56CCF2"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" rx="44" fill="url(#ai-bg)"/>
+  <rect x="170" y="130" width="860" height="540" rx="36" fill="url(#ai-panel)" stroke="#D7E4F7" stroke-width="4"/>
+  <circle cx="370" cy="285" r="68" fill="url(#ai-accent)"/>
+  <circle cx="830" cy="285" r="68" fill="#D9E8FF"/>
+  <circle cx="600" cy="455" r="96" fill="url(#ai-accent)"/>
+  <path d="M370 285L525 285" stroke="#7AAEF8" stroke-width="12" stroke-linecap="round"/>
+  <path d="M675 285L830 285" stroke="#7AAEF8" stroke-width="12" stroke-linecap="round"/>
+  <path d="M476 401L540 425" stroke="#7AAEF8" stroke-width="12" stroke-linecap="round"/>
+  <path d="M720 401L660 425" stroke="#7AAEF8" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="525" cy="285" r="16" fill="#2F80ED"/>
+  <circle cx="675" cy="285" r="16" fill="#2F80ED"/>
+  <circle cx="540" cy="425" r="16" fill="#2F80ED"/>
+  <circle cx="660" cy="425" r="16" fill="#2F80ED"/>
+  <circle cx="600" cy="455" r="20" fill="#fff"/>
+  <path d="M558 455H642" stroke="#2F80ED" stroke-width="12" stroke-linecap="round"/>
+  <path d="M600 413V497" stroke="#2F80ED" stroke-width="12" stroke-linecap="round"/>
+  <rect x="270" y="535" width="660" height="76" rx="22" fill="#FFFFFF"/>
+  <rect x="300" y="561" width="220" height="18" rx="9" fill="#C7D8F3"/>
+  <rect x="300" y="593" width="310" height="14" rx="7" fill="#DCE7F7"/>
+  <circle cx="900" cy="573" r="24" fill="#2F80ED"/>
+  <path d="M888 573H912" stroke="#fff" stroke-width="10" stroke-linecap="round"/>
+  <path d="M900 561V585" stroke="#fff" stroke-width="10" stroke-linecap="round"/>
+</svg>
