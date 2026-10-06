@@ -1,23 +1,23 @@
 <svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bg" x1="160" y1="80" x2="1040" y2="720" gradientUnits="userSpaceOnUse">
+    <linearGradient id="ai-bg" x1="160" y1="80" x2="1040" y2="720" gradientUnits="userSpaceOnUse">
       <stop stop-color="#EAF4FF"/>
       <stop offset="1" stop-color="#F7FAFF"/>
     </linearGradient>
-    <linearGradient id="panel" x1="260" y1="180" x2="940" y2="620" gradientUnits="userSpaceOnUse">
+    <linearGradient id="ai-panel" x1="260" y1="180" x2="940" y2="620" gradientUnits="userSpaceOnUse">
       <stop stop-color="#FFFFFF"/>
       <stop offset="1" stop-color="#E8F1FF"/>
     </linearGradient>
-    <linearGradient id="accent" x1="340" y1="180" x2="860" y2="620" gradientUnits="userSpaceOnUse">
+    <linearGradient id="ai-accent" x1="340" y1="180" x2="860" y2="620" gradientUnits="userSpaceOnUse">
       <stop stop-color="#2F80ED"/>
       <stop offset="1" stop-color="#56CCF2"/>
     </linearGradient>
   </defs>
-  <rect width="1200" height="800" rx="44" fill="url(#bg)"/>
-  <rect x="170" y="130" width="860" height="540" rx="36" fill="url(#panel)" stroke="#D7E4F7" stroke-width="4"/>
-  <circle cx="370" cy="285" r="68" fill="url(#accent)"/>
+  <rect width="1200" height="800" rx="44" fill="url(#ai-bg)"/>
+  <rect x="170" y="130" width="860" height="540" rx="36" fill="url(#ai-panel)" stroke="#D7E4F7" stroke-width="4"/>
+  <circle cx="370" cy="285" r="68" fill="url(#ai-accent)"/>
   <circle cx="830" cy="285" r="68" fill="#D9E8FF"/>
-  <circle cx="600" cy="455" r="96" fill="url(#accent)"/>
+  <circle cx="600" cy="455" r="96" fill="url(#ai-accent)"/>
   <path d="M370 285L525 285" stroke="#7AAEF8" stroke-width="12" stroke-linecap="round"/>
   <path d="M675 285L830 285" stroke="#7AAEF8" stroke-width="12" stroke-linecap="round"/>
   <path d="M476 401L540 425" stroke="#7AAEF8" stroke-width="12" stroke-linecap="round"/>
