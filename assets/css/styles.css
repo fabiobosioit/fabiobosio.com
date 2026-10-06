@@ -201,4 +201,8 @@ footer {
         grid-template-columns: 1fr;
         padding: 1rem;
     }
+
+    .services-visuals {
+        grid-template-columns: 1fr;
+    }
 }
