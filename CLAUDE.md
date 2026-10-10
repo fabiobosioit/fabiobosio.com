@@ -10,6 +10,8 @@ Static personal website for Fabio Bosio (IT Developer Consultant), deployed to G
 
 Pushing to `main` automatically deploys to GitHub Pages via `.github/workflows/static.yml`. The entire repository root is served as the site. Work on feature branches and merge to `main` only when ready to publish.
 
+`.github/workflows/preview.yml` deploys `main` at the root plus the `redesign/ui-theme` branch under `/preview/` (requires that branch to be allowed in the `github-pages` environment). A later push to `main` removes `/preview/` until the preview workflow runs again.
+
 ## Structure
 
 - `index.html` — Splash screen (logo animation), redirects to `home.html` via `assets/js/splash.js`
@@ -27,6 +29,8 @@ Pushing to `main` automatically deploys to GitHub Pages via `.github/workflows/s
 - Every content page shares the same header, nav and footer. Nav order: Home, About Me, Services, Portfolio, Contact (Contact uses `nav-cta`).
 - Exactly one nav link per page carries `class="active"` (plus `aria-current="page"`).
 - Each page's `<head>` includes Google Fonts (Space Grotesk, Inter, JetBrains Mono), `styles.css`, and the inline theme script that reads `localStorage.theme` before paint.
+- Light theme is the default for everyone; dark mode only applies after the visitor uses the toggle.
+- The splash animation in `index.html` must match the original: logo grows from 0 to `75vmin` in 3s on a white background, then redirects to `home.html`.
 - Brand colors come from the logo: blue `#018CCF`, slate `#39464E`. Use CSS variables (`--brand`, `--text`, `--surface`, …), never hard-coded colors in pages, so dark mode keeps working.
 - Reuse existing component classes (`card`, `bento`, `timeline`, `steps`, `cta-band`, `tags`, `btn`, …) before adding new CSS. Add `reveal` to blocks for scroll animation.
 - Do not publish phone number, home address or date of birth.
