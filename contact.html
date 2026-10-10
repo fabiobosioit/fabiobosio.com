@@ -1,33 +1,201 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Fabio Bosio</title>
+    <title>Contact — Fabio Bosio</title>
+    <meta name="description" content="Contact Fabio Bosio, IT developer consultant based in Lombardy, Italy, working remotely across Europe. Email or LinkedIn; replies usually within 1–2 working days.">
+    <meta name="theme-color" content="#018ccf">
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
 </head>
 <body>
-    <header>
-        <img src="assets/images/logo.png" alt="Fabio Bosio Logo" class="logo">
-        <h1>Hi, I'm Fabio Bosio</h1>
-        <p>Developer Consultant | Creating Scalable, Innovative, and Robust Solutions</p>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+        <div class="container">
+            <a href="home.html" class="brand" aria-label="Fabio Bosio — home">
+                <img src="assets/images/logo.png" alt="" width="38" height="38">
+                <span>Fabio Bosio<small>IT Developer Consultant</small></span>
+            </a>
+            <nav aria-label="Main">
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html" class="nav-cta active">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="icon-btn theme-toggle" type="button" aria-label="Toggle dark mode">
+                    <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+                    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+                </button>
+                <button class="icon-btn menu-toggle" type="button" aria-label="Open menu" aria-controls="nav-links" aria-expanded="false">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+                </button>
+            </div>
+        </div>
     </header>
-    <nav>
-        <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html" class="active">Contact</a></li>
-        </ul>
-    </nav>
-    <main>
-        <h2>Get in Touch</h2>
-        <p>If you have any questions or want to discuss your project, feel free to reach out!</p>
-        <p><strong>Email:</strong> <a href="mailto:example@fabiobosio.com">example@fabiobosio.com</a></p>
-        <p>Alternatively, you can connect with me on: <a href="https://linkedin.com/in/fabiobosio">LinkedIn</a></p>
+
+    <main id="main">
+        <section class="page-hero">
+            <div class="container reveal">
+                <p class="eyebrow">Contact</p>
+                <h1>Let's talk about your project.</h1>
+                <p class="lead">Whether you need a new application, a second opinion on an existing system, or a first practical step with AI, send me a few lines. I usually reply within 1–2 working days.</p>
+            </div>
+        </section>
+
+        <section class="section" style="padding-top:1rem" aria-labelledby="reach-title">
+            <div class="container split split--top">
+                <div class="reveal">
+                    <h2 id="reach-title">How to reach me</h2>
+                    <p style="margin-top:0.85rem">Email is the quickest way to reach me. I read every message myself and reply personally.</p>
+                    <ul class="grid" style="margin-top:2rem">
+                        <li class="contact-item">
+                            <span class="icon-badge">
+                                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+                            </span>
+                            <div>
+                                <strong>Email</strong>
+                                <a href="mailto:fabio.bosio.it@gmail.com">fabio.bosio.it@gmail.com</a>
+                            </div>
+                        </li>
+                        <li class="contact-item">
+                            <span class="icon-badge">
+                                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 11v5"/><path d="M8 8v.01"/><path d="M12 16v-5"/><path d="M16 16v-3a2 2 0 0 0-4 0"/></svg>
+                            </span>
+                            <div>
+                                <strong>LinkedIn</strong>
+                                <a href="https://linkedin.com/in/fabiobosio" target="_blank" rel="noopener" aria-label="linkedin.com/in/fabiobosio (opens in a new tab)">linkedin.com/in/fabiobosio</a>
+                            </div>
+                        </li>
+                        <li class="contact-item">
+                            <span class="icon-badge">
+                                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>
+                            </span>
+                            <div>
+                                <strong>Location</strong>
+                                <p>Lombardy, Italy — working remotely across Europe</p>
+                            </div>
+                        </li>
+                        <li class="contact-item">
+                            <span class="icon-badge">
+                                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/><path d="M8.5 10.5h7M8.5 13.5h4"/></svg>
+                            </span>
+                            <div>
+                                <strong>Languages</strong>
+                                <p>Italian / English</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <aside class="card reveal" aria-labelledby="include-title">
+                    <span class="icon-badge">
+                        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 3v2h6V3"/><path d="M9 11l2 2 4-4"/><path d="M9 17h6"/></svg>
+                    </span>
+                    <h3 id="include-title">What to include in your message</h3>
+                    <p>A few details help me give you a useful first answer instead of a list of questions:</p>
+                    <ul class="check-list" style="margin-top:1rem">
+                        <li><strong>Your goals:</strong> the problem you want to solve or the result you're after</li>
+                        <li><strong>Current systems:</strong> what you use today (languages, platforms, databases, tools)</li>
+                        <li><strong>Timeline:</strong> any deadlines or key dates</li>
+                        <li><strong>Budget range:</strong> even a rough figure helps me suggest the right approach</li>
+                    </ul>
+                    <div class="btn-row">
+                        <a href="mailto:fabio.bosio.it@gmail.com?subject=Project%20inquiry" class="btn btn-primary">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4z"/></svg>
+                            Email me about your project
+                        </a>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <section class="section section--alt" aria-labelledby="engagements-title">
+            <div class="container">
+                <div class="section-head reveal">
+                    <p class="eyebrow">Typical engagements</p>
+                    <h2 id="engagements-title">Ways we can work together</h2>
+                    <p>Not sure which fits? Describe your situation and I'll suggest one.</p>
+                </div>
+                <div class="grid grid-3">
+                    <article class="card reveal">
+                        <span class="icon-badge">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+                        </span>
+                        <h3>Short consultancy</h3>
+                        <p>A focused review of your architecture, codebase or AI opportunities, delivered as clear written recommendations you can act on.</p>
+                        <div class="tags" style="margin-top:1rem">
+                            <span class="badge">Days to a few weeks</span>
+                        </div>
+                    </article>
+                    <article class="card reveal">
+                        <span class="icon-badge">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l9 5-9 5-9-5z"/><path d="M3 12l9 5 9-5"/><path d="M3 17l9 5 9-5"/></svg>
+                        </span>
+                        <h3>Project delivery</h3>
+                        <p>I build a defined application, integration or dashboard end to end, with an agreed scope, milestones and regular demos along the way.</p>
+                        <div class="tags" style="margin-top:1rem">
+                            <span class="badge">Fixed scope</span>
+                        </div>
+                    </article>
+                    <article class="card reveal">
+                        <span class="icon-badge">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-3-6.7"/><path d="M21 4v5h-5"/></svg>
+                        </span>
+                        <h3>Ongoing support</h3>
+                        <p>Ongoing maintenance, improvements and technical advice for systems already in production, whether I built them or not.</p>
+                        <div class="tags" style="margin-top:1rem">
+                            <span class="badge">Monthly retainer</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer>
-        <p>© 2026 Fabio Bosio - All Rights Reserved</p>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a href="home.html" class="brand">
+                        <img src="assets/images/logo.png" alt="" width="38" height="38">
+                        <span>Fabio Bosio<small>IT Developer Consultant</small></span>
+                    </a>
+                    <p style="margin-top:1rem;max-width:340px">Reliable software, from legacy systems to AI-assisted web applications. Based in Lombardy, Italy — working remotely across Europe.</p>
+                </div>
+                <div>
+                    <h4>Site</h4>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="about.html">About Me</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:fabio.bosio.it@gmail.com">fabio.bosio.it@gmail.com</a></li>
+                        <li><a href="https://linkedin.com/in/fabiobosio" target="_blank" rel="noopener">LinkedIn</a></li>
+                        <li><a href="contact.html">Start a project</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© <span data-year>2026</span> Fabio Bosio — All Rights Reserved</span>
+                <span>Crafted with plain HTML &amp; CSS</span>
+            </div>
+        </div>
     </footer>
+
+    <script src="assets/js/main.js"></script>
 </body>
 </html>

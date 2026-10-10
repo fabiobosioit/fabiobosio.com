@@ -1,0 +1,65 @@
+# Preview deployment for the redesign branch.
+#
+# GitHub Pages hosts a single site per repository, so deploying this branch on its own
+# would replace the live site. Instead, this workflow publishes:
+#   - the current `main` branch at the site root (live site unchanged)
+#   - this branch under /preview/  (e.g. https://<your-domain>/preview/)
+#
+# Note: the next push to `main` runs static.yml, which redeploys only `main`
+# and removes /preview/ until this workflow runs again.
+#
+# Requirement: in Settings → Environments → github-pages → Deployment branches,
+# allow `redesign/ui-theme` (by default only `main` may deploy).
+name: Deploy redesign preview to Pages
+
+on:
+  push:
+    branches: ["redesign/ui-theme"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}preview/
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main (live site)
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          path: site
+
+      - name: Checkout this branch (preview)
+        uses: actions/checkout@v4
+        with:
+          path: preview-src
+
+      - name: Assemble site with /preview
+        run: |
+          rm -rf site/.git site/.github
+          mkdir -p site/preview
+          rsync -a --exclude '.git' --exclude '.github' preview-src/ site/preview/
+          # Keep search engines away from the preview copy
+          sed -i 's|<head>|<head>\n    <meta name="robots" content="noindex, nofollow">|' site/preview/*.html
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

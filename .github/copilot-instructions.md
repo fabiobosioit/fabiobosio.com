@@ -13,7 +13,8 @@ No build/test/lint tooling is configured in the repository.
 
 - `index.html` is the splash/entry page. It renders `#splash` and loads `assets/js/splash.js`.
 - `assets/js/splash.js` listens for the splash logo `animationend` and redirects to `home.html`.
-- `home.html`, `about.html`, `services.html`, and `contact.html` are the actual content pages.
+- `home.html`, `about.html`, `services.html`, `portfolio.html`, and `contact.html` are the actual content pages.
+- `assets/js/main.js` handles theme toggle (light/dark, stored in localStorage), mobile menu, sticky header and scroll reveal.
 - Shared presentation is centralized in `assets/css/styles.css`:
   - base layout and typography
   - shared header/nav/footer styles
@@ -23,9 +24,9 @@ No build/test/lint tooling is configured in the repository.
 
 ## Key repository conventions
 
-- Keep the top-level content pages (`home.html`, `about.html`, `services.html`, `contact.html`) structurally aligned:
+- Keep the top-level content pages (`home.html`, `about.html`, `services.html`, `portfolio.html`, `contact.html`) structurally aligned:
   - same header block (logo, headline, subtitle)
-  - same nav item order (Home, About Me, Services, Contact)
+  - same nav item order (Home, About Me, Services, Portfolio, Contact)
   - same footer format
 - In nav markup, exactly one link per page should carry `class="active"` to indicate the current page.
 - Keep link targets consistent with current routing:
