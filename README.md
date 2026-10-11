@@ -17,5 +17,6 @@ https://fabiobosioit.github.io/fabiobosio.com/
 
 ## Notes
 
+- The site is bilingual: Italian in `it/`, English in `en/`; `index.html` picks the language.
 - The site is static and has no build step.
 - GitHub Pages deploys the repository root from the `main` branch.
