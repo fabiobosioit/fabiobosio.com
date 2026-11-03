@@ -416,6 +416,10 @@ a.card { color: inherit; display: block; }
 .reveal.is-visible { opacity: 1; transform: none; }
 .no-js .reveal { opacity: 1; transform: none; }
 
+@keyframes pageFadeIn { from { opacity: 0; } to { opacity: 1; } }
+html.splash-entry-pending body { opacity: 0; }
+body.splash-entry-fade { animation: pageFadeIn 1.5s var(--ease) both; }
+
 /* ── Splash screen (index.html) ── */
 #splash {
     position: fixed; inset: 0;

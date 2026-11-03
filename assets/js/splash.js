@@ -11,9 +11,17 @@
         }
         return 'en';
     };
-    var go = function () { window.location.replace(pickLanguage() + '/home.html'); };
+    var redirected = false;
+    var logoHoldMs = 1000;
+    var go = function () {
+        if (redirected) return;
+        redirected = true;
+        try { sessionStorage.setItem('fromSplash', '1'); } catch (e) { /* storage blocked: continue */ }
+        window.location.replace(pickLanguage() + '/home.html');
+    };
+    var scheduleGo = function () { setTimeout(go, logoHoldMs); };
     var img = document.querySelector('#splash img');
-    if (img) img.addEventListener('animationend', go);
+    if (img) img.addEventListener('animationend', scheduleGo);
     // Fallback: redirect even if the animation never fires (reduced motion, image error)
-    setTimeout(go, 4500);
+    setTimeout(scheduleGo, 4500);
 })();

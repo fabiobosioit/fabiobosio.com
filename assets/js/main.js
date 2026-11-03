@@ -3,6 +3,15 @@
     var root = document.documentElement;
     root.classList.remove('no-js');
 
+    var isHomePage = /\/(it|en)\/home\.html$/i.test(window.location.pathname);
+    var fromSplash = false;
+    try {
+        fromSplash = sessionStorage.getItem('fromSplash') === '1';
+        if (fromSplash) sessionStorage.removeItem('fromSplash');
+    } catch (e) { /* storage unavailable */ }
+    if (fromSplash && isHomePage) document.body.classList.add('splash-entry-fade');
+    root.classList.remove('splash-entry-pending');
+
     // Theme toggle (initial theme is set inline in <head> to avoid a flash)
     var themeBtn = document.querySelector('.theme-toggle');
     if (themeBtn) {
